@@ -1,0 +1,625 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.side-bar{
+  
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding: 1px;
+     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+#close{
+    cursor: pointer;
+}
+.navbar-links{
+    display: flex;
+    flex-direction: row;
+   gap: 40px;
+   padding: 10px;
+   
+}
+.navbar-links a{
+    color: black;
+   text-decoration: none;
+}
+
+.navbar-links a:hover{
+    
+   text-decoration: underline;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 10px;
+}
+
+.menu-bar1{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+   
+}
+
+.menu-bar1 a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.menu-bar a{
+    color: white;
+}
+
+.menu-bar{
+    display: flex;
+    flex-direction: row;
+        background-color: #1D232C;
+        width: 50%;
+    height: 100vh;
+     color: white;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    left: -50%;
+    justify-content: space-between;
+  
+ transition-duration: 1s;
+
+}
+.menu-bar2{
+    padding: 30px;
+    cursor: pointer;
+
+}
+.slider{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    position: relative;
+    
+    border-radius: 5px;
+
+}
+
+.slider img{
+
+    filter: brightness(50%);
+
+}
+
+.slider-image-container{
+    display: flex;
+    transition: 2s;
+}
+
+.slider-image{
+    width: 100vw;
+   
+    
+}
+
+.slider-left-button{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    z-index: 1;
+}
+
+.slider-left-button i{
+    font-size: 10vw;
+    
+}
+.slider-right-button{
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+.slider-right-button i{
+    font-size: 10vw;
+}
+.slider-content{
+    position: absolute;
+    color: white;
+    text-align: center;
+     width: 100%;
+     top: 20%;
+     z-index: 30;
+}
+.slider-content h1{
+    font-size: 5vw;
+}
+.slider-content button{
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin-top: 10px;
+   color: #1D232C;
+}
+
+
+.brands{
+      display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+    
+}
+
+.brands-container{
+font-size: 30px;
+padding: 10px;
+margin: 10px;
+}
+
+
+.brands-container i{
+        font-size: 50px;
+
+     }
+
+.experience{
+    padding: 10px;
+    margin-top: 40px;
+}
+.experience-sec1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+.experience-sec1 p{
+    font-size: 25px;
+}
+
+.experience-sec1 h2{
+    font-size: 30px;
+}
+.experience-sec2{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    gap: 10px;
+  
+
+}
+.original, .satisfaction, .new-arrival , .shipping{
+    width: 20%;
+    background-color: #F2F4F7;
+    padding: 15px;
+}
+.experience-sec2 i{
+    font-size: 40px;
+}
+.arrivals-container{
+    padding: 10px;
+    
+}
+
+.arrivals{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 40px;
+    margin: 10px;
+}
+.arrivals-sec1, .arrivals-sec2, .arrivals-sec3, .arrivals-sec4{
+    width: 20%;
+    position: relative;
+}
+
+.arrivals-sec1 img, .arrivals-sec2 img, .arrivals-sec3 img, .arrivals-sec4 img{
+    width: 100%;
+    border-radius: 10px;
+       filter: brightness(40%);
+    position: relative;
+}
+
+.arrivals-sec1 button, .arrivals-sec2 button, .arrivals-sec3 button, .arrivals-sec4 button{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.shop{
+    position: absolute;
+left: 25%;
+bottom: 30%;
+
+    z-index: 5;
+
+}
+
+.most-wanted_container{
+    margin: 10px;
+    padding: 10px;
+}
+.most-wanted{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+.wanted-sec1, .wanted-sec2, .wanted-sec3, .wanted-sec4{
+       width: 20%;
+    position: relative
+
+}
+
+.wanted-sec1 img, .wanted-sec2 img, .wanted-sec3 img, .wanted-sec4 img{
+    width: 100%;
+    border-radius: 10px;
+     
+   
+}
+
+.wanted-sec1 button,.wanted-sec2 button, .wanted-sec3 button, .wanted-sec4 button{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    background-color: red;
+    border: red 1px solid;
+    color: white;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-size: 20px;
+    
+}
+.wanted-sec1 i,.wanted-sec2 i, .wanted-sec3 i, .wanted-sec4 i{
+    font-size: 30px;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid black;
+
+}
+
+
+.offer{
+    background-color: #C39A6A;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+    height: 50vh;
+    
+
+}
+
+.offer-sec1 img{
+    width: 100%;
+    height: 100%;
+   
+}
+.offer-sec2{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    
+}
+.offer-sec1{
+    width: 70%;
+    height: 100%;
+    
+}
+
+
+.offer button{
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+
+.offer-sec2 h2{
+    font-size: 50px;
+}
+
+.offer-sec2 h3{
+    font-size: 30px;
+}
+
+
+.news{
+    text-align: center;
+    margin: 40px;
+}
+.news button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.news h2{
+    font-size: 50px;
+}
+.news p{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.news input{
+    width: 80%; 
+    border: 3px solid black;
+    padding: 15px;
+}
+.footer{
+    background-color: #1D232C;
+    color: white;
+    padding: 20px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.footer h2{
+    font-size: 70px;
+}
+
+
+/* Collecions */
+.collections{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.items{
+     display: flex;
+    flex-direction: row;
+   
+
+}
+
+.items-1, .items-2, .items-3{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 20px;
+
+
+}
+
+.product{
+    width: 20vw;
+}
+
+.product img{
+    width: 100%;
+}
+
+.collections-sec3{
+     display: flex;
+    flex-direction: column;
+
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.search{
+  border: 1px solid black;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+}
+
+.search input{
+    border: none;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.categories{
+    padding: 20px;
+}
+
+
+.line{
+    width: 3px;
+    background-color: black;
+   
+
+}
+
+
+/* Contact */
+
+.contact{
+    background-color: #1D232C;
+    padding: 50px;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
+}
+
+.contact input{
+   padding-left: 10px;
+}
+
+.nameError, .emailError{
+    color: red;
+    font-size: 20px;
+    display: none;
+
+}
+
+@media screen and (min-width:800px) {
+    .menu{
+        display: none;
+    }
+     
+.offer-sec1{
+    width: 100%;
+    height: 100%;
+    
+}
+    
+}
+
+
+
+@media screen and (max-width:800px){
+    .navbar-links{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .categories{
+        font-size: 10px;
+    }
+    .items-1, .items-2, .items-3{
+        gap: 20px;
+        font-size: 10px;
+    }
+
+   
+    .news h2{
+        font-size: 20px;
+    }
+    .news p{
+       font-size: 15px;
+    }
+
+    .footer h2{
+        font-size: 40px;
+    }
+
+    .arrivals-sec1 button, .arrivals-sec2 button, .arrivals-sec3 button, .arrivals-sec4 button{
+    padding: 2px;
+    border-radius: 20px;
+    font-size: 8px;
+}
+
+.wanted-sec1 button,.wanted-sec2 button, .wanted-sec3 button, .wanted-sec4 button{
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 10px;
+    
+    top: 5%;
+    left: 5%;
+    
+}
+.wanted-sec1 i,.wanted-sec2 i, .wanted-sec3 i, .wanted-sec4 i{
+    font-size: 10px;
+   bottom: 7%;
+    
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid black;
+
+}
+
+
+.offer-sec2{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    padding-left: 1%;
+}
+
+.offer-sec2 h2{
+    font-size: 20px;
+}
+
+.offer-sec2 h3{
+    font-size: 8px;
+}
+
+.offer button{
+    padding: 3px;
+    border-radius: 15px;
+    font-size: 8px;
+}
+.offer{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.experience-sec2 p{
+    font-size: 10px;
+}
+
+.experience-sec2 i{
+    font-size: 20px;
+}
+
+.experience-sec2 h3{
+    font-size: 15px;
+}
+
+.experience-sec1 h2{
+    font-size: 15px;
+}
+
+.experience-sec1 p{
+    font-size: 10px;
+}
+
+.brands-container{
+font-size: 10px;
+
+}
+     .brands-container i{
+        font-size: 30px;
+
+     }
+
+     .offer{
+        height: 30vh;
+     }
+
+
+}
