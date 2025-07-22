@@ -7,9 +7,7 @@ var menuIcon=document.querySelector(".menu")
 var menuBar=document.querySelector(".menu-bar")
 var menuClose=document.querySelector(".menu-bar2")
 
-var sliderleftbutton = document.getElementById("slider-left-activate")
-var sliderrightbutton =document.getElementById("slider-right-activate")
-var sliderimage= document.querySelector(".slider-image-container")
+
 
 
 //Event listener
@@ -28,8 +26,12 @@ menuClose.addEventListener("click",function(){
 // Slide
 
 
+var sliderleftbutton = document.getElementById("slider-leftactivate")
+var sliderrightbutton =document.getElementById("slider-rightactivate")
+var sliderimage= document.querySelector(".slider-imageContainer")
 var slidermargin=0
 
+console.log(sliderleftbutton)
 
 sliderrightbutton.addEventListener("click",
 
@@ -69,4 +71,5 @@ function(){
     
 }
 )
+
 

@@ -80,7 +80,7 @@ body {
     left: -50%;
     justify-content: space-between;
   
- transition-duration: 1s;
+ transition-duration: 2s;
 
 }
 .menu-bar2{
@@ -98,54 +98,53 @@ body {
 
 }
 
-.slider img{
-
-    filter: brightness(50%);
-
-}
-
-.slider-image-container{
+.slider-imageContainer{
     display: flex;
     transition: 2s;
 }
 
 .slider-image{
     width: 100vw;
-   
-    
 }
 
-.slider-left-button{
+.slider-leftbtn{
     position: absolute;
     top: 35%;
     left: 5%;
     z-index: 1;
+    color: white;
 }
 
-.slider-left-button i{
+.slider img{
+    filter: brightness(40%);
+    z-index: -1;
+}
+
+.slider-leftbtn i{
     font-size: 10vw;
     
 }
-.slider-right-button{
+.slider-rightbtn{
     position: absolute;
     top: 35%;
     right: 5%;
+    color: white;
 }
-.slider-right-button i{
+.slider-rightbtn i{
     font-size: 10vw;
 }
-.slider-content{
+.sliderContent{
     position: absolute;
     color: white;
     text-align: center;
      width: 100%;
      top: 20%;
-     z-index: 30;
+     
 }
-.slider-content h1{
+.sliderContent h1{
     font-size: 5vw;
 }
-.slider-content button{
+.sliderContent button{
    padding-left: 20px;
    padding-right: 20px;
    padding-top: 10px;
@@ -153,7 +152,6 @@ body {
    margin-top: 10px;
    color: #1D232C;
 }
-
 
 .brands{
       display: flex;
